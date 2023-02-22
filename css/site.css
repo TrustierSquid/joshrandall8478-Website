@@ -9,8 +9,7 @@
     --main-bg-color: #131313;
     --main-fg-color: whitesmoke;
     --main-hover-color: #C1E1C1;
-  }
-  
+}  
 
 body {
     background-color: var(--main-bg-color);
