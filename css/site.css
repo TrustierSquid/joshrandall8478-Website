@@ -87,3 +87,15 @@ body {
 
 /* Navbar Shit */
 
+/* Mobile adjustments */
+@media screen and (max-width: 480px) {
+    .main__content h1 {
+        font-size: 4rem;
+    }
+    .main__content h2 {
+        font-size: 1.2rem;
+    }
+    .main__links {
+        font-size: 3rem;
+    }
+}
