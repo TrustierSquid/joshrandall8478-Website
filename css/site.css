@@ -44,6 +44,11 @@ body {
     font-size: 3rem;
 }
 
+.main__content p {
+    font-size: 1.6rem;
+    padding: 13px 0;
+}
+
 @keyframes easeInToTop{
     0% {
         opacity: 0;
@@ -97,6 +102,11 @@ body {
 #main__subtitle {
     opacity: 0;
     animation: 0.5s ease-out 1s 1 easeInToBottom;
+    animation-fill-mode: forwards;
+}
+#main__paragraph {
+    opacity: 0;
+    animation: 0.5s ease-out 2s 1 easeInToBottom;
     animation-fill-mode: forwards;
 }
 
@@ -202,10 +212,13 @@ body {
         font-size: 4rem;
     }
     .main__content h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .main__links {
         font-size: 3rem;
+    }
+    .main__content p {
+        font-size: 1rem;
     }
 }
 
@@ -214,10 +227,13 @@ body {
         font-size: 4rem;
     }
     .main__content h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .main__links {
         font-size: 3rem;
+    }
+    .main__content p {
+        font-size: 1.3rem;
     }
 }
 
@@ -232,7 +248,7 @@ body {
         padding: 0;
     }
     .navbar__menu {
-        display: grid;
+        display: none;
         grid-template-columns: auto;
         margin: 0;
         width: 100%;
@@ -241,13 +257,14 @@ body {
         transition: all 0.5 ease;
         height: 50vh;
         z-index: -1;
-        background: #131313;
     }
     .navbar__menu.active {
+        display: grid;
         background: #242424;
         top: 100%;
+        right: 0px;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-out;
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
@@ -314,3 +331,6 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+
+/* Additional pages */
