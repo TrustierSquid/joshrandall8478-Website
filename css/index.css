@@ -5,6 +5,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Core color variables */
+
 :root {
     --main-bg-color: #131313;
     --main-fg-color: whitesmoke;
@@ -18,7 +20,6 @@ body {
 
 .main {
     color: var(--main-fg-color);
-
 }
 
 .main__container{
@@ -48,6 +49,9 @@ body {
     font-size: 1.6rem;
     padding: 13px 0;
 }
+
+
+/* Animations */
 
 @keyframes easeInToTop{
     0% {
@@ -93,6 +97,42 @@ body {
     }
 }
 
+/* Additional Containers */
+
+.next__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: right;
+    justify-self: center;
+    text-align: left;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    opacity: 0;
+    animation: 1s ease-out 1s 1 easeInToLeft;
+    animation-fill-mode: forwards;
+}
+
+.next__content h1 {
+    font-size: 7rem;
+}
+
+.next__content h2 {
+    font-size: 3rem;
+}
+
+.next__content p {
+    font-size: 1.6rem;
+    padding: 13px 0;
+}
+
+
+
+/* Main Links */
+
 .main__links {
     position: relative;
     z-index: 2;
@@ -116,6 +156,8 @@ body {
     color: var(--main-hover-color);
     transition: all 0.3s ease;
 }
+
+/* Animate Title */
 
 #main__title {
     animation: 1s ease-out 0s 1 easeInToTop;
@@ -167,7 +209,7 @@ body {
     display: flex;
     text-decoration: none;
     height: 60px;
-    transform: translate(0px,10px)
+    transform: translate(0px,10px);
 }
 
 #navbar__logo:hover {
@@ -230,6 +272,7 @@ body {
 }
 
 /* Mobile adjustments */
+
 @media screen and (max-width: 1000px) {
     .main__content h1 {
         font-size: 4rem;
@@ -241,6 +284,16 @@ body {
         font-size: 3rem;
     }
     .main__content p {
+        font-size: 1rem;
+    }
+
+    .next__content h1 {
+        font-size: 2rem;
+    }
+    .next__content h2 {
+        font-size: 1.4rem;
+    }
+    .next__content p {
         font-size: 1rem;
     }
 }
@@ -258,6 +311,16 @@ body {
     .main__content p {
         font-size: 1.3rem;
     }
+
+    .next__content h1 {
+        font-size: 2rem;
+    }
+    .next__content h2 {
+        font-size: 1.4rem;
+    }
+    .next__content p {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 960px) { 
@@ -271,7 +334,7 @@ body {
         padding: 0;
     }
     .navbar__menu {
-        display: grid;
+        display: none;
         grid-template-columns: auto;
         margin: 0;
         width: 100%;
@@ -358,6 +421,3 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
-
-/* Additional pages */
