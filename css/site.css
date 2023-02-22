@@ -9,6 +9,7 @@
     --main-bg-color: #131313;
     --main-fg-color: whitesmoke;
     --main-hover-color: #C1E1C1;
+    --main-accent-color: #77DD77;
 }
 
 body {
@@ -67,6 +68,28 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes easeInToLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes easeOutToRight{
+    0% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(50%);
     }
 }
 
@@ -138,16 +161,17 @@ body {
 }
 
 #navbar__logo {
-    color: var(--main-fg-color);
+    fill: var(--main-fg-color);
     align-items: center;
     cursor: pointer;
     display: flex;
     text-decoration: none;
-    font-size: 3rem;
+    height: 60px;
+    transform: translate(0px,10px)
 }
 
 #navbar__logo:hover {
-    color: var(--main-hover-color);
+    fill: var(--main-hover-color);
     transition: all 0.3s ease;
 }
 
@@ -163,7 +187,7 @@ body {
 }
 
 .navbar__links {
-    color:#77DD77;
+    color:var(--main-accent-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,7 +225,7 @@ body {
 }
 
 .navbar__links:hover {
-    color: #ecf0f1;
+    color: var(--main-hover-color);
     transition: all 0.3s ease;
 }
 
@@ -247,13 +271,16 @@ body {
         padding: 0;
     }
     .navbar__menu {
-        display: none;
+        display: grid;
         grid-template-columns: auto;
         margin: 0;
         width: 100%;
         position: absolute;
+        animation: 0.4s ease-in-out 0s 1 easeOutToRight;
+        animation-fill-mode: forwards;
         opacity: 0;
-        transition: all 0.5 ease;
+        transition: all 1;
+        top: 1000px;
         height: 50vh;
         z-index: -1;
     }
@@ -261,9 +288,10 @@ body {
         display: grid;
         background: #242424;
         top: 100%;
-        right: 0px;
         opacity: 1;
-        transition: all 0.5s ease-out;
+        /* transition: all 0.5s ease-out; */
+        animation: 0.4s ease-in-out 0s 1 easeInToLeft;
+        animation-fill-mode: forwards;
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
