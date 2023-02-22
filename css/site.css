@@ -64,7 +64,7 @@ body {
     justify-content: center;
     font-size: 30px;
     opacity: 0;
-    animation: 1s ease-out 2s 1 easeInToBottom;
+    animation: 0.5s ease-out 1.5s 1 easeInToBottom;
     animation-fill-mode: forwards;
 }
 
@@ -81,6 +81,9 @@ body {
 
 #main__subtitle {
     opacity: 0;
-    animation: 1s ease-out 1s 1 easeInToBottom;
+    animation: 0.5s ease-out 1s 1 easeInToBottom;
     animation-fill-mode: forwards;
 }
+
+/* Navbar Shit */
+
