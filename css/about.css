@@ -1,0 +1,6 @@
+@import url("./index.css");
+
+.navbar {
+    opacity: 1;
+    animation: none;
+}
