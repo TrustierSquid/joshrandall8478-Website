@@ -50,7 +50,7 @@
     text-align: right;
     font-size: 1.6rem;
     opacity: 0;
-    animation: 1s ease 1.5s 1 easeInToLeft;
+    animation: 1s alternate 1s 1 easeInToTop;
     animation-fill-mode: forwards;
 }
 
@@ -65,7 +65,7 @@
     height: 200px;
     width: auto;
     align-self: left;
-    animation: 0.7s ease 0s 1 easeInToBottom;
+    animation: 0.7s ease 0s 1 easeInToRight;
     animation-fill-mode: forwards;
 }
 
@@ -77,8 +77,11 @@
     .main__container{
         display:inline;
     }
+    .main__content h2 {
+        font-size: 2rem;
+    }
     .paragraph{
-        font-size: 1rem;
+        font-size: 1.4rem;
         margin: 10px;
         text-align: left;
     }
