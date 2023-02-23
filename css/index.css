@@ -191,6 +191,11 @@ body {
     animation-fill-mode: forwards;
 }
 
+.navbar.hide {
+    top: -200px;
+    transition: all 1s ease;
+}
+
 .navbar__container {
     display: flex;
     justify-content: space-between;
