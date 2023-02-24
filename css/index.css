@@ -39,17 +39,23 @@ body {
 
 .main__content h1 {
     font-size: 7rem;
+    animation: 1s ease 0s 1 easeInToTop;
 }
 
 .main__content h2 {
     font-size: 3rem;
+    opacity: 0;
+    animation: 0.5s ease-out 1s 1 easeInToBottom;
+    animation-fill-mode: forwards;
 }
 
 .main__content p {
     font-size: 1.6rem;
     padding: 13px 0;
+    opacity: 0;
+    animation: 0.5s ease-out 2s 1 easeInToBottom;
+    animation-fill-mode: forwards;
 }
-
 
 /* Animations */
 
@@ -155,23 +161,6 @@ body {
 .main__links a:hover{
     color: var(--main-hover-color);
     transition: all 0.3s ease;
-}
-
-/* Animate Title */
-
-#main__title {
-    animation: 1s ease 0s 1 easeInToTop;
-}
-
-#main__subtitle {
-    opacity: 0;
-    animation: 0.5s ease-out 1s 1 easeInToBottom;
-    animation-fill-mode: forwards;
-}
-#main__paragraph {
-    opacity: 0;
-    animation: 0.5s ease-out 2s 1 easeInToBottom;
-    animation-fill-mode: forwards;
 }
 
 /* Navbar Shit */
