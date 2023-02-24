@@ -14,7 +14,7 @@
     --main-accent-color: #77DD77;
 }
 
-body {
+html, body {
     background-color: var(--main-bg-color);
     overflow-x: hidden;
 }
