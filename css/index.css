@@ -293,7 +293,7 @@ html, body {
         animation-fill-mode: forwards;
         opacity: 0;
         transition: all 1;
-        height: 100vh;
+        height: 80vh;
         z-index: -1;
     }
     .navbar__menu.active {
@@ -305,7 +305,7 @@ html, body {
         animation: 0.4s ease-in-out 0s 1 easeInToLeft;
         animation-fill-mode: forwards;
         z-index: 99;
-        height: 100vh;
+        height: 80vh;
         font-size: 1.6rem;
     }
 
@@ -323,7 +323,7 @@ html, body {
 
     .navbar__item {
         width: 100%;
-        padding: 0.2rem;
+        padding: 0.1rem;
     }
 
     .navbar__links {
