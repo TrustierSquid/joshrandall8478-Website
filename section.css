@@ -7,8 +7,10 @@ section {
     background-color: #222;
     height: 80vh;
     border: 2px solid var(--main-accent-color);
+    border-radius: 20px;
     gap: 1.5rem;
     padding: 1.5rem;
+    margin-top: 20px;
 }
 
 #grid-item1 > h2, #grid-item2 > h1{
