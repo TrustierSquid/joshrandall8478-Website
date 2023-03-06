@@ -27,6 +27,7 @@ section {
 
 .project-btn {
     height: 50px;
+    width: 250px;
     background-color: transparent;
     border: 1px solid var(--main-accent-color);
     color: white;
