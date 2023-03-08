@@ -74,6 +74,36 @@
     text-align: left;
 }
 
+hr {
+    border: 3px solid whitesmoke;
+
+}
+.skills h1 {
+    font-size: 5rem;
+}
+.skills i {
+    font-size: 4.5rem;
+}
+.skills h2{
+    font-size: 2rem;
+}
+.skills span{
+    font-size: 1.3rem;
+}
+.skills span.greyed {
+    color: grey;
+}
+.coding__skills{
+    display: flex;
+}
+.coding__item{
+    display: inline-block;
+    width: 200px;
+    justify-self: left;
+    text-align: center;
+    padding: 5px 15px;
+}
+
 @media screen and (max-width: 1000px) {
     .main__container{
         display:inline;
