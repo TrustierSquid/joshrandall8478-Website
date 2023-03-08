@@ -76,8 +76,35 @@
 
 hr {
     border: 3px solid whitesmoke;
-
+    border-radius: 7px 7px 7px 7px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px auto;
 }
+
+.skills{
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.skills hr {
+    border: 3px solid whitesmoke;
+    border-radius: 7px 7px 7px 7px;
+    width: 250px;
+    justify-content: left;
+    align-items: left;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 50px auto;
+}
+
 .skills h1 {
     font-size: 5rem;
 }
@@ -93,10 +120,11 @@ hr {
 .skills span.greyed {
     color: grey;
 }
-.coding__skills{
+.skills__category{
     display: flex;
+    padding: 50px 0px 50px 0px;
 }
-.coding__item{
+.skills__item{
     display: inline-block;
     width: 200px;
     justify-self: left;
