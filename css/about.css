@@ -150,18 +150,35 @@ hr {
     hr {
         border: 3px solid whitesmoke;
         border-radius: 7px 7px 7px 7px;
-        width: 400px;
+        width: 75%;
         justify-content: center;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
         padding: 50px auto;
     }
-}
-
-@media screen and (max-width: 700px) {
+    .skills{
+        margin: 0 auto;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0 50px;
+    }
     .skills__category{
         display: inline-block;
-        padding: 50px 0px 50px 0px;
+        padding: 20px 0px 20px 0px;
     }
 }
+
+/* @media screen and (max-width: 500px){
+    .skills__category{
+        display: contents;
+        padding: 20px 0px 20px 0px;
+    }
+    .skills__item i {
+        font-size: 2.5rem;
+    }
+    .skills__item h2, h3{
+        font-size: 1rem;
+    }
+} */
