@@ -215,11 +215,9 @@ hr {
         padding: 50px auto;
     }
     .skills{
-        margin: 0 auto;
-        z-index: 1;
         width: 100%;
         max-width: 1300px;
-        padding: 0 50px;
+        padding: 0 15px;
     }
     .skills h1{
         font-size: 3rem;
@@ -237,16 +235,9 @@ hr {
     .skills__category{
         display: grid;
         position: relative;
-        right: 50px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr;
         align-items: center;
         padding: auto 0px auto 0px;
-    }
-    .skills__item i {
-        font-size: 2.5rem;
-    }
-    .skills__item h2, h3{
-        font-size: 1rem;
     }
 }
 
@@ -262,7 +253,7 @@ hr {
         padding: auto 0px auto 0px;
     }
     .skills__item i {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     .skills__item h2, h3{
         font-size: 1rem;
