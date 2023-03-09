@@ -237,11 +237,11 @@ hr {
         position: relative;
         grid-template-columns: 0.5fr 0.5fr;
         align-items: center;
-        padding: auto 0px auto 0px;
+        /* padding: auto 0px auto 0px; */
     }
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 402px){
     .skills{
         position: absolute;
     }
@@ -253,7 +253,7 @@ hr {
         padding: auto 0px auto 0px;
     }
     .skills__item i {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .skills__item h2, h3{
         font-size: 1rem;
