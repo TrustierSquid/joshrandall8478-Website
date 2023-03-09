@@ -4,6 +4,7 @@ const skills__title = document.querySelector('#skills__title');
 const hr = document.querySelectorAll('.skills__divider');
 const category__titles = document.querySelectorAll('.category__titles');
 const skills__item = document.querySelectorAll('.skills__item');
+const attribution = document.querySelector('.adobe__attribution');
 
 // Create the observer, same as before:
 const observer = new IntersectionObserver(entries => {
@@ -20,6 +21,7 @@ const observer = new IntersectionObserver(entries => {
         skills__item.forEach((element) => {
             element.classList.add('active');
         })
+        attribution.classList.add('active');
         return;
     }
     });
