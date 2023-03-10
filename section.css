@@ -6,7 +6,8 @@ section {
     grid-template-columns: .5fr 1fr;
     background-color: #222;
     height: 80vh;
-    border: 2px solid var(--main-accent-color);
+    border-top: 2px solid var(--main-accent-color);
+    border-bottom: 2px solid var(--main-accent-color);
     gap: 1.5rem;
     padding: 1.5rem;
 }

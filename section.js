@@ -12,8 +12,6 @@ function projectClicks(){
     projectBtn[0].addEventListener("click", () =>{
         document.getElementById("project-name-holder").innerHTML = 'Project 1';
         console.log("Project 1 clicked");
-
-        
         
     })
     
