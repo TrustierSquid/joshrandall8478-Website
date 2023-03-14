@@ -82,7 +82,7 @@ section {
 
 .dropdown.active > a,
 .navbar_item:hover {
-    color: black;
+    color: white;
 }
 
 
@@ -94,10 +94,10 @@ section {
     position: absolute;
     left: 0;
     top: calc(100% + .25rem);
-    background-color: white;
+    background-color: #333;
     padding: .75rem;
     border-radius: .25rem;
-    box-shadow: 0 2px 5px 0 black .1;
+    box-shadow: 0 5px 5px 0 black .1;
     opacity: 0;
     transition: opacity 150ms ease-in-out,  transform 150ms ease-in-out;
     transform: translateY(-10px);
@@ -114,22 +114,24 @@ section {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 2.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .dropdown-heading {
     text-align: left;
+    color: var(--main-accent-color);
 }
 
 .dropdown-links {
     display: flex;
     flex-direction: column;
     align-items: start;
+    
 }
 
 .dropdown-links > .links {
     text-decoration: none;
-    color: grey;
+    color: white;
 }
 
 .dropdown-links > .links:hover {
