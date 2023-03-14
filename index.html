@@ -38,25 +38,42 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+            
             <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="/" class="navbar__links">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/about.html" class="navbar__links">About</a>
-                </li>
-                <!-- <li class="navbar__item">
-                    <a class="navbar__links">Projects</a>
-                </li> -->
-                <li class="navbar__item">
-                    <a href="https://status.joshrandall.net" class="navbar__links">Uptime</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="https://github.com/joshrandall8478/joshrandall8478.github.io" class="navbar__links">Site Github Repo</a>
-                </li>
-                <!-- <li class="navbar__btn">
-                    <a class="button">Contact</a>
-                </li> -->
+                <div class="dropdown" data-dropdown>
+                    <a href="#" class="navbar__links" class="navbar__item" data-dropdown-button>Home</a>
+                    <div class="dropdown-menu information-grid">
+                        <div>
+                            <h3 class="dropdown-heading">About</h3>
+                            <div class="dropdown-links">
+                                <a href="#" class="links">All</a>
+                                <a href="#" class="links">Latest</a>
+                                <a href="#" class="links">Most Popular</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="dropdown-heading">Blog</h3>
+                            <div class="dropdown-links">
+                                <a href="#" class="links">CSS</a>
+                                <a href="#" class="links">Tailwind</a>
+                                <a href="#" class="links">Bootstrap</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="dropdown-heading">Free Tutorials</h3>
+                            <div class="dropdown-links">
+                                <a href="#" class="links">Twitter</a>
+                                <a href="#" class="links">Facebook</a>
+                                <a href="#" class="links">Youtube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="navbar__item"><a href="/about.html" class="navbar__links">About</a>
+                <li class="navbar__item"><a href="https://status.joshrandall.net" class="navbar__links">Uptime</a></li>
+                <li class="navbar__item"><a href="https://github.com/joshrandall8478/joshrandall8478.github.io" class="navbar__links">Site Github Repo</a></li>
+    
             </ul>
         </div>
     </nav>

@@ -12,3 +12,6 @@ window.addEventListener('scroll', () => {
     }
     return document.querySelector('.navbar').classList.remove('hide')
 })
+
+
+
