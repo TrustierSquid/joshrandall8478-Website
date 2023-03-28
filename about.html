@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph Data -->
+    <meta name="og:site_name" content="Joshua Randall">
+    <meta property="og:title" content="Joshua Randall - About">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/preview.png">
+    <meta property="og:url" content="https://joshrandall.net">
+    <meta property="og:description" content="About page">
+    <!-- <meta name="theme-color" content="#77DD77"> -->
+
+    <!-- Stylesheet and Favicon -->
     <link rel="stylesheet" href="css/about.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
@@ -12,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 
-    <link rel="import" href="/index.html">
+    <!-- <link rel="import" href="/index.html"> -->
 
     <!-- FontAwesome Javascript Link -->
     <script src="https://kit.fontawesome.com/61a8afa681.js" crossorigin="anonymous"></script>
@@ -83,12 +94,80 @@
                 </p>
             </div>
         </div>
-        <!-- <div class="next__container">
-            <div class="next__content">
-                <h1>Test</h1>
+        <br>
+        <hr id="divider">
+        <br>
+        <div class="skills">
+            <h1 id="skills__title">Skills</h1>
+            <h2 class="category__titles"><a class="fa-solid fa-code"></a> Languages</h2>
+            <hr class="skills__divider">
+            <div id="coding" class="skills__category">
+                <div id="Python" class="skills__item">
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                </div>
+                <div id="Java" class="skills__item">
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                </div>
+                <div class="skills__item" id="CSS">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                </div>
+                <div class="skills__item" id="HTML">
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                </div>
+                <div class="skills__item" id="JS">
+                    <i class="fa-brands fa-square-js"></i>
+                    <h2>JavaScript</h2>
+                </div>
+                <div class="skills__item" id="MD">
+                    <i class="fa-brands fa-markdown"></i>
+                    <h2>Markdown</h2>
+                </div>
             </div>
-        </div> -->
+            <h2 class="category__titles"><a class="fa-solid fa-wand-magic-sparkles"></a> Design</h2>
+            <div class="adobe__attribution"><p>Attribution: Adobe icons created by <a href="https://www.flaticon.com/authors/freepik" title="graphic design icons">Freepik</a></p></div>
+            <hr class="skills__divider">
+            <div id="design" class="skills__category">
+                <div id="Premiere Pro" class="skills__item">
+                    <img src="/images/premiere-pro.png">
+                    <h2>Premiere Pro</h2>
+                </div>
+                <div class="skills__item" id="After Effects">
+                    <img src="/images/after-effects.png">
+                    <h2>After Effects</h2>
+                </div>
+                <div class="skills__item" id="Photoshop">
+                    <img src="/images/photoshop.png">
+                    <h2>Photoshop</h2>
+                </div>
+                <div class="skills__item" id="Illustrator">
+                    <img src="/images/illustrator.png">
+                    <h2>Illustrator</h2>
+                </div>
+            </div>
+            <h2 class="category__titles"><a class="fa-solid fa-compact-disc"></a> Operating Systems</h2>
+            <hr class="skills__divider">
+            <div id="OS" class="skills__category">
+                <div id="Windows" class="skills__item">
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h2>Windows</h2>
+                </div>
+                <div id="macOS" class="skills__item">
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>macOS</h2>
+                </div>
+                <div id="Linux" class="skills__item">
+                    <i class="fa-brands fa-linux"></i>
+                    <h2>Linux</h2>
+                    <p>i use arch btw</p>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="app.js"></script>
+    <script src="about.js"></script>
 </body>
 </html>
